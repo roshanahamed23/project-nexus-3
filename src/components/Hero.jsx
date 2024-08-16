@@ -34,7 +34,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-red p-4 flex flex-row gap-4">
         <div className="bg-black w-1/2 max-md:w-full h-[96vh] flex justify-center items-center flex-col gap-10">
-          <h2 className="text-red text-6xl font-black max-md:text-2xl text-center p-6 max-md:max-w-2xl">
+          <h2 className="text-red text-6xl font-black max-md:text-3xl text-center p-6 max-md:max-w-2xl">
             Building Awesome Software with a{" "}
             <span className="text-white">Twist</span>
           </h2>
@@ -48,7 +48,7 @@ const Hero = () => {
             />
           </div>
 
-          <h2 className="text-yellow-300 font-bebas text-4xl max-md:text-xl p-6 shadow-lg shadow-red max-md:max-w-lg border-dashed border-[3px]">
+          <h2 className="text-yellow-300 font-bebas text-4xl max-md:text-lg p-6 shadow-lg shadow-red max-md:max-w-lg border-dashed border-[3px]">
             {array[currentIndex].text}
           </h2>
           <div className="flex items-end">
