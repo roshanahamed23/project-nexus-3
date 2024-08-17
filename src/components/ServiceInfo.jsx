@@ -4,7 +4,7 @@ import Image from "next/image";
 const ServiceInfo = ({ icon, title, description, buttonText, link }) => {
   return (
     <div className="border rounded-md shadow-sm text-center p-6 flex flex-col gap-4 justify-center items-center border-r-[35px] border-l-red border-r-red border-l-[35px] bg-black">
-      <div className="rounded-md p-1 flex justify-center bg-black items-center w-24 h-24">
+      <div className="rounded-md p-1 flex justify-center bg-black items-center w-24 h-18">
         <div className="flex justify-between gap-6 items-center">
         <div className="bg-white w-12 h-6 rounded-[100%/100%] rounded-b-2xl"></div>
           <div className="z-10" style={{ position: "relative", width: "200px", height: "200px" }}>
@@ -14,6 +14,7 @@ const ServiceInfo = ({ icon, title, description, buttonText, link }) => {
             fill
             style={{ objectFit: "contain" }}
             className="rounded-2xl"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
           <div className="bg-white w-12 h-6 rounded-[100%/100%] rounded-b-2xl"></div>

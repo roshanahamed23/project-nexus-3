@@ -28,7 +28,7 @@ const cartInfo = [
 
   const Service = () => {
     return (
-      <div className="flex flex-col lg:flex-row m-2 gap-4 p-1">
+      <div className="flex flex-col lg:flex-row m-2 gap-2 justify-center items-center p-1">
         {cartInfo.map((info, index) => (
           <ServiceInfo key={index} {...info} />
         ))}
