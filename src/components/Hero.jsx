@@ -29,9 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="h-screen relative">
-      <div className="separate"></div>
-
+    <div className="h-screen relative m-2">
       <div className="absolute inset-0 bg-red p-4 flex flex-row gap-4">
         <div className="bg-black w-1/2 max-md:w-full h-[96vh] flex justify-center items-center flex-col gap-10">
           <h2 className="text-red text-6xl font-black max-md:text-3xl text-center p-6 max-md:max-w-2xl">
