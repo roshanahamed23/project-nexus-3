@@ -21,7 +21,7 @@ const Numbercounter = ({ start, end, duration }) => {
 
   return (
     <div className="text-3xl font-bebas font-bold text-red">
-      {!Number.isInteger(end) ? (Math.round(number * 10) / 10) : Math.round(number)}
+      {Math.round(number)}
     </div>
   );
 };
