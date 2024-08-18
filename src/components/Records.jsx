@@ -1,5 +1,5 @@
 import React from "react";
-import NumberCounter from "./NumberCounter";
+import NumberCounter from "./Numbercounter";
 
 const data = [
   {
