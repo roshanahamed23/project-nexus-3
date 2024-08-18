@@ -11,14 +11,14 @@ export default function Home() {
     <Layout>
       <Hero />
       <Service />
+      <Records />
       <div
-        className="bg-cover bg-fixed bg-right-top  w-full"
+        className="bg-cover bg-fixed bg-right-top w-full"
         style={{ backgroundImage: `url(${pool5.src})` }}
       >
-        <Records />
         <Bgsection />
-        <Formpart />
       </div>
+      <Formpart />
     </Layout>
   );
 }
