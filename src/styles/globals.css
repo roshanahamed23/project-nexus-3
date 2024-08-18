@@ -10,6 +10,9 @@
   .separate{
     @apply bg-white w-full h-2;
   }
+  .input{
+    @apply p-3 border rounded-lg bg-slate-100 w-full
+  }
 }
 
 .hover-gradient-text {
