@@ -37,7 +37,7 @@ const Records = () => {
               className="text-center text-white md:border-r-black md:border-r-[2px] px-6"
             >
               <div className="flex justify-center items-baseline gap-1">
-                <NumberCounter start={0} end={d.value} duration={1000} />
+                <NumberCounter start={0} end={d.value} duration={2500} />
                 <span className="text-xl font-bold font-bebas">{d.symbol}</span>
               </div>
               <h4 className="mt-2 text-xl font-bebas">{d.text}</h4>

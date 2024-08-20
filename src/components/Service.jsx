@@ -8,21 +8,21 @@ const cartInfo = [
       title: "Digital Marketing",
       description: "Boost your online presence and connect with more people using our smart digital marketing strategies.",
       buttonText: "Explore",
-      link:"#service"
+      link:"/service/digital-marketing"
     },
     {
       icon: service2,
       title: "Web Development",
       description: "We make attractive, easy-to-use websites that represent your brand well and help you reach more customers online.",
       buttonText: "Explore",
-      link:"/menu"
+      link:"/service/web-development"
     },
     {
       icon: service3,
       title: "Graphic Design",
       description: "We create eye-catching designs that make your brand stand out and leave a lasting impression",
       buttonText: "Explore",
-      link:"/about-us"
+      link:"/service/graphic-design"
     }
   ];
 

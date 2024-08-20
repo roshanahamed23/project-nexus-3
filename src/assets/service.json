@@ -1,0 +1,18 @@
+[
+    { "slug": "web-development",
+      "title": "Web Development",
+      "description": "Our Web Development services are focused on creating robust, user-friendly websites that represent your brand and meet your business needs. From responsive design to seamless functionality, we ensure that your website not only looks great but also performs exceptionally across all devices. We specialize in building custom websites using the latest technologies, including HTML5, CSS3, JavaScript, React, and more. Whether you need an e-commerce platform, a corporate site, or a personal blog, our team is committed to delivering a solution that is both visually appealing and technically sound.",
+      "image": "/product/images.jpeg"
+    },
+    { "slug": "graphic-design",
+      "title": "Graphic Design",
+      "description": "Our Graphic Design services are all about bringing your brand's visual identity to life. We create stunning designs that communicate your message clearly and leave a lasting impression on your audience. From logos and branding materials to brochures, flyers, and social media graphics, our designers work closely with you to understand your vision and deliver designs that resonate with your brand. We combine creativity with strategy to produce visuals that not only look good but also achieve your marketing objectives. Let us help you stand out with unique, high-quality designs that reflect your brand's personality.",
+      "image": "/product/graphics.jpg"
+    },
+    { "slug": "digital-marketing",
+      "title": "Digital Marketing",
+      "description": "Our Digital Marketing services are designed to help your brand thrive in the digital world. We create customized strategies that focus on increasing your online presence, driving traffic to your website, and converting visitors into loyal customers. Whether it's through SEO, social media marketing, content creation, or email campaigns, our team of experts will tailor a plan that fits your business goals. We use data-driven insights to optimize your campaigns and ensure maximum ROI, helping you reach and engage with your target audience effectively.",
+      "image": "/product/digital.jpg"
+    }
+  ]
+  
