@@ -16,7 +16,6 @@ export default async function handler(req, res) {
 
   if (method === "POST") {
     try {
-      // Ensure the request body contains the necessary fields
       const { name, email, subject, comment } = req.body;
       if (!name || !email || !subject || !comment) {
         return res.status(400).json({ message: "Missing required fields" });
