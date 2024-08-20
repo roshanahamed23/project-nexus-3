@@ -14,7 +14,7 @@ const Formpart = () => {
   function handleSubmit(e) {
     e.preventDefault();
     const payload={name,email,subject,comment};
-    axios.post('api/hello', payload)
+    axios.post('/api/hello', payload)
     .then((res) => {
       toast.success("message was sent successfully");    
       setName("");
