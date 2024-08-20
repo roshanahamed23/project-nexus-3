@@ -31,7 +31,7 @@ const Googelmap = () => {
           <GoogleMap
             mapContainerStyle={mapContainerStyle}
             center={position}
-            zoom={14}
+            zoom={18}
             onLoad={onLoad}
           >
             {mapLoaded && (

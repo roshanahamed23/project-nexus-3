@@ -28,7 +28,7 @@ const Formpart = () => {
   }
 
   return (
-    <div className=" relative w-full m-2 flex flex-col lg:flex-row justify-center items-start bg-orange-100 p-10 gap-6">
+    <div className=" relative w-full m-2 flex flex-col lg:flex-row justify-center items-start bg-orange-100 p-6 gap-6">
       <div className="flex flex-col gap-6 justify-center items-center">
         <h2 className="font-bebas font-bold flex flex-col gap-4 text-4xl max-md:2xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
