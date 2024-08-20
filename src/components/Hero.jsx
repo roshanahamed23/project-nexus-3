@@ -52,7 +52,7 @@ const Hero = () => {
           </h2>
           <div className="flex items-end">
             <button className="text-black bg-red font-bold text-xl max-md:text-md bg-red-500 rounded-lg px-6 py-3 hover:bg-red hover:text-white transition-transform duration-1000 ease-in-out transform hover:scale-110">
-              Pool us
+             <a href="/contact">Pool us</a>
             </button>
           </div>
         </div>

@@ -1,15 +1,30 @@
 import { pool4 } from "@/assets";
+import axios from "axios";
 import Image from "next/image";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+
 
 const Formpart = () => {
   const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [sub, setSub] = useState("");
+  const [email, setMail] = useState("");
+  const [subject, setSub] = useState("");
   const [comment, setCommet] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
+    const payload={name,email,subject,comment};
+    axios.post('api/hello', payload)
+    .then((res) => {
+      toast.success("message was sent successfully");    
+      setName("");
+      setMail("")
+      setSub("")
+      setCommet("")
+    })
+    .catch((err) => {
+      toast.error("error occured");
+    });
   }
 
   return (
@@ -51,7 +66,7 @@ const Formpart = () => {
             <input
               type="text"
               placeholder="Email"
-              value={mail}
+              value={email}
               className="input"
               onChange={(e) => setMail(e.target.value)}
               required
@@ -62,7 +77,7 @@ const Formpart = () => {
             <input
               type="text"
               placeholder="Subject"
-              value={sub}
+              value={subject}
               className="input"
               onChange={(e) => setSub(e.target.value)}
               required

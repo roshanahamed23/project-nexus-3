@@ -1,10 +1,10 @@
 import { loc } from '@/assets';
-import { Circle, GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import React, { useEffect, useState } from 'react';
-
 
 const Googelmap = () => {
   const [isBrowser, setIsBrowser] = useState(false);
+  const [mapLoaded, setMapLoaded] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
@@ -20,8 +20,9 @@ const Googelmap = () => {
     lng: 80.252214263259,
   };
 
-  
-
+  const onLoad = () => {
+    setMapLoaded(true);
+  };
 
   return (
     <>
@@ -30,9 +31,18 @@ const Googelmap = () => {
           <GoogleMap
             mapContainerStyle={mapContainerStyle}
             center={position}
-            zoom={18}
+            zoom={14}
+            onLoad={onLoad}
           >
-            <Marker position={position} icon={loc.src}/>
+            {mapLoaded && (
+              <Marker
+                position={position}
+                icon={{
+                  url: loc,
+                  scaledSize: new window.google.maps.Size(40, 40), // Adjust size as needed
+                }}
+              />
+            )}
           </GoogleMap>
         </LoadScript>
       )}

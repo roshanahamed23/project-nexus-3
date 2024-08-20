@@ -52,10 +52,10 @@ const AboutUs = () => {
                         className="bg-white shadow-md rounded-lg p-2 mb-6 font-merriweather"
                     >
                         <h2 className="text-lg font-semibold mb-4">
-                            Exceptional Quality
+                        Expert Team
                         </h2>
                         <p className="text-gray-700">
-                            At Shiva caterers, we provide top-notch food and service. Our fresh ingredients and skilled chefs ensure a delightful dining experience.
+                        Our team consists of seasoned professionals with years of experience in their respective fields. Their expertise, combined with a passion for innovation, guarantees that you receive the best possible outcomes for your projects.
                         </p>
                     </motion.div>
 
@@ -67,10 +67,10 @@ const AboutUs = () => {
                         className="bg-white shadow-md rounded-lg p-2 mb-6"
                     >
                         <h2 className="text-lg font-semibold mb-4 font-merriweather text-red">
-                            Customizable Menus
+                        Tailored Solutions
                         </h2>
                         <p className="text-gray-700">
-                            Every event is unique. We offer customizable menus tailored to your preferences and dietary needs, perfect for weddings, corporate events, or birthday parties.
+                        Every client is unique, and so are our solutions. We work closely with you to understand your specific needs, offering personalized services that are perfectly aligned with your goals and vision.
                         </p>
                     </motion.div>
 
@@ -82,10 +82,11 @@ const AboutUs = () => {
                         className="bg-white shadow-md rounded-lg p-2 mb-6"
                     >
                         <h2 className="text-lg font-semibold mb-4 font-merriweather">
-                            Professional Service
+                        Unmatched Quality
+
                         </h2>
                         <p className="text-gray-700">
-                            Our experienced team ensures your event is seamless and memorable. From planning to execution, we deliver exceptional service with a personal touch.
+                        We prioritize excellence in every detail, from the ingredients we use to the final presentation. Our commitment to delivering the highest quality ensures that every product and service we offer exceeds expectations.
                         </p>
                     </motion.div>
                 </div>

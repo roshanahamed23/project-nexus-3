@@ -29,7 +29,7 @@ const Footer = () => {
             We craft websites that bring your vision to life and catapult your
             business into the digital spotlight, Deadpool style
           </p>
-          <h3 className="text-xl tracking-tight font-bebas font-black text-red font-bebas">
+          <h3 className="text-xl tracking-tight font-black text-red font-bebas">
             We are Social
           </h3>
           <div className="flex flex-row gap-2 items-center">
@@ -46,13 +46,13 @@ const Footer = () => {
           </h3>
           <ul>
             <li className="text-white text-md hover:text-red p-2">
-              <a href="#">About us</a>
+              <a href="/about-us">About us</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
               <a href="#">Consultant</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
-              <a href="#">Pool us</a>
+              <a href="/contact">Pool us</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
               <a href="#">Career</a>
@@ -65,16 +65,16 @@ const Footer = () => {
           </h3>
           <ul>
             <li className="text-white text-md hover:text-red p-2">
-              <a href="#">Digital Marketing</a>
+              <a href="/service/digital-marketing">Digital Marketing</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
-              <a href="#">Website Development</a>
+              <a href="/service/web-development">Website Development</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
               <a href="#">Consultancy</a>
             </li>
             <li className="text-white text-md hover:text-red p-2">
-              <a href="#">Creative Design</a>
+              <a href="/service/graphic-design">Creative Design</a>
             </li>
           </ul>
         </div>

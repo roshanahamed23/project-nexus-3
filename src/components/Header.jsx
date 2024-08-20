@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { logo } from "@/assets";
-import { Bars3Icon } from "@heroicons/react/24/solid";
-import { XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
-  const [mobileMenu, setmobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <div className="bg-gradient-to-l from-red to-orange-900 p-4">
       <header className="flex flex-row sm:justify-around justify-between max-sm:px-3 items-center bg-black border border-dashed">
         <nav className="max-sm:hidden">
           <ul className="flex space-x-20">
-            <li className="marvel">Home</li>
-            <li className="marvel">Products/Service</li>
+            <li className="marvel">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="marvel">
+              <Link href="#form">Products/Service</Link>
+            </li>
           </ul>
         </nav>
 
@@ -30,13 +35,17 @@ const Header = () => {
 
         <nav className="max-sm:hidden">
           <ul className="flex space-x-20">
-            <li className="marvel">Pool us</li>
-            <li className="marvel">About us</li>
+            <li className="marvel">
+              <Link href="/contact">Pool us</Link>
+            </li>
+            <li className="marvel">
+              <Link href="/about-us">About us</Link>
+            </li>
           </ul>
         </nav>
 
         <div className="sm:hidden">
-          <button onClick={() => setmobileMenu(!mobileMenu)}>
+          <button onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu ? (
               <XMarkIcon className="text-red size-10" />
             ) : (
@@ -46,14 +55,24 @@ const Header = () => {
         </div>
       </header>
 
-      {mobileMenu?<div className="border-l-black border-l-8 py-4 w-1/3 sm:hidden">
-        <ul className="flex flex-col gap-3">
-          <li className="text-white font-semibold font-bebas px-2 hover:text-black">Home</li>
-          <li className="text-white font-semibold font-bebas px-2">Product/services</li>
-          <li className="text-white font-semibold font-bebas px-2">Pool us</li>
-          <li className="text-white font-semibold font-bebas px-2">About us</li>
-        </ul>
-      </div>:""}
+      {mobileMenu && (
+        <div className="border-l-black border-l-8 py-4 w-1/3 sm:hidden">
+          <ul className="flex flex-col gap-3">
+            <li className="text-white font-semibold font-bebas px-2 hover:text-black">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="text-white font-semibold font-bebas px-2">
+              <Link href="#form">Product/services</Link>
+            </li>
+            <li className="text-white font-semibold font-bebas px-2">
+              <Link href="/contact">Pool us</Link>
+            </li>
+            <li className="text-white font-semibold font-bebas px-2">
+              <Link href="/about-us">About us</Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
