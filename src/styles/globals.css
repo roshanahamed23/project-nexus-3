@@ -27,3 +27,13 @@
 .hover-gradient-text:hover {
   background-position: bottom;
 }
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}

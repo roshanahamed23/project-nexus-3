@@ -16,7 +16,7 @@ const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="marvel">
-              <Link href="#form">Products/Service</Link>
+              <Link href="/product">Products/Service</Link>
             </li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@ const Header = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="text-white font-semibold font-bebas px-2">
-              <Link href="#form">Product/services</Link>
+              <Link href="/product">Product/services</Link>
             </li>
             <li className="text-white font-semibold font-bebas px-2">
               <Link href="/contact">Pool us</Link>
